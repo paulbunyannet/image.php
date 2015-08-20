@@ -1,0 +1,11 @@
+{
+  "name": "image.php",
+  "version": "1.4.2",
+  "ignore": [
+    "LICSENSE",
+    "README.md",
+    ".gitignore",
+    ".DS_Store",
+    "tests"
+  ]
+}
