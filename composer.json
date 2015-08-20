@@ -1,0 +1,16 @@
+{
+    "name": "paulbunyannet/image.php",
+    "description": "Smart Image Resizer",
+    "authors": [
+        {
+            "name": "Joe Lencioni",
+            "email": "joe@shiftingpixel.com"
+        },
+        {
+            "name": "Nate Nolting",
+            "email": "naten@paulbunyan.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

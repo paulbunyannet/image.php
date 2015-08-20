@@ -25,6 +25,12 @@ Updated By: Nate Nolting ([naten@paulbunyan.net](mailto:naten@paulbunyan.net))
 * PHP
 * GD
 
+##INSTALL VIA BOWER
+
+```
+    bower install image.php#1.4.2 -S
+```
+
 ## PARAMETERS
 
 Parameters need to be passed in through the URL's query string:
