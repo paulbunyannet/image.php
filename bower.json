@@ -1,6 +1,15 @@
 {
   "name": "image.php",
+  "description": "Smart Image Resizer",
   "version": "1.4.2",
+  "authors": [
+    "Joe Lencioni <joe@shiftingpixel.com> (http://shiftingpixel.com)",
+    "Nate Nolting <naten@paulbunyan.net> (http://www.paulbunyan.net)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:paulbunyannet/image.php.git"
+  },
   "ignore": [
     "LICSENSE",
     "README.md",
