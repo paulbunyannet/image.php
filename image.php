@@ -1,5 +1,5 @@
 <?php
-// Smart Image Resizer 1.4.2
+// Smart Image Resizer 1.4.3
 // Resizes images, intelligently sharpens, crops based on width:height ratios, color fills
 // transparent GIFs and PNGs, and caches variations for optimal performance
 
@@ -104,7 +104,7 @@ $docRoot	= preg_replace('/\/$/', '', DOCUMENT_ROOT);
 if (!file_exists($docRoot . $image))
 {
 	header('HTTP/1.1 404 Not Found');
-	echo 'Error: image does not exist: ' . $docRoot . $image;
+	echo 'Error: image does not exist: '  . $image;
 	exit();
 }
 
@@ -116,7 +116,7 @@ $mime	= $size['mime'];
 if (substr($mime, 0, 6) != 'image/')
 {
 	header('HTTP/1.1 400 Bad Request');
-	echo 'Error: requested file is not an accepted type: ' . $docRoot . $image;
+	echo 'Error: requested file is not an accepted type: ' . $image;
 	exit();
 }
 
