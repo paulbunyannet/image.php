@@ -1,5 +1,5 @@
 <?php
-// Smart Image Resizer 1.4.3
+// Smart Image Resizer 1.4.4
 // Resizes images, intelligently sharpens, crops based on width:height ratios, color fills
 // transparent GIFs and PNGs, and caches variations for optimal performance
 
@@ -109,7 +109,7 @@ if (!file_exists($docRoot . $image))
 }
 
 // Get the size and MIME type of the requested image
-$size	= GetImageSize($docRoot . $image);
+$size	= @GetImageSize($docRoot . $image);
 $mime	= $size['mime'];
 
 // Make sure that the requested file is actually an image
