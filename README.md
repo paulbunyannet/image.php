@@ -28,7 +28,7 @@ Updated By: Nate Nolting ([naten@paulbunyan.net](mailto:naten@paulbunyan.net))
 ##INSTALL VIA BOWER
 
 ```
-    bower install image.php#1.4.2 -S
+    bower install image.php#1.4.4 -S
 ```
 
 ## PARAMETERS
