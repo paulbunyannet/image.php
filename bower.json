@@ -1,7 +1,7 @@
 {
   "name": "image.php",
   "description": "Smart Image Resizer",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "authors": [
     "Joe Lencioni <joe@shiftingpixel.com> (http://shiftingpixel.com)",
     "Nate Nolting <naten@paulbunyan.net> (http://www.paulbunyan.net)"
