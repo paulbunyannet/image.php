@@ -1,5 +1,5 @@
 <?php
-// Smart Image Resizer 1.4.4
+// Smart Image Resizer 1.4.5
 // Resizes images, intelligently sharpens, crops based on width:height ratios, color fills
 // transparent GIFs and PNGs, and caches variations for optimal performance
 
@@ -8,6 +8,7 @@
 // Based on: http://veryraw.com/history/2005/03/image-resizing-with-php/
 
 // Updated By: Nate Nolting (naten@paulbunyan.net)
+// Updated By: d3n1c1d3 (github.com/d3n1c1d3)
 
 /////////////////////
 // LICENSE
@@ -266,7 +267,7 @@ switch ($size['mime'])
 		$outputFunction		= 'ImagePng';
 		$mime				= 'image/png'; // We need to convert GIFs to PNGs
 		$doSharpen			= FALSE;
-		$quality			= round(10 - ($quality / 10)); // We are converting the GIF to a PNG and PNG needs a compression level of 0 (no compression) through 9
+		$quality			= smartImageResizeMap($quality, 0, 100, 0, 9); // We are converting the GIF to a PNG and PNG needs a compression level of 0 (no compression) through 9
 	break;
 	
 	case 'image/x-png':
@@ -274,7 +275,7 @@ switch ($size['mime'])
 		$creationFunction	= 'ImageCreateFromPng';
 		$outputFunction		= 'ImagePng';
 		$doSharpen			= FALSE;
-		$quality			= round(10 - ($quality / 10)); // PNG needs a compression level of 0 (no compression) through 9
+		$quality			= smartImageResizeMap($quality, 0, 100, 0, 9); // PNG needs a compression level of 0 (no compression) through 9
 	break;
 	
 	default:
@@ -412,6 +413,14 @@ function doConditionalGet($etag, $lastModified)
 	header('HTTP/1.1 304 Not Modified');
 	exit();
 } // doConditionalGet()
+
+function smartImageResizeMap($value, $input_start, $input_stop, $output_start, $output_stop)
+{
+	// based on the map function in the java applett processing
+	// https://processing.org/reference/map_.html
+	// https://forum.processing.org/one/topic/recreate-map-function.html
+	return $output_start + ($output_stop - $output_start) * (($value - $input_start) / ($input_stop - $input_start));
+} // smartImageResizeMap()
 
 // old pond
 // a frog jumps
