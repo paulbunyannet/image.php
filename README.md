@@ -1,4 +1,4 @@
-#Smart Image Resizer
+# Smart Image Resizer
 
 Resizes images, intelligently sharpens, crops based on width:height ratios, color fills
 transparent GIFs and PNGs, and caches variations for optimal performance
@@ -9,7 +9,7 @@ Based on: http://veryraw.com/history/2005/03/image-resizing-with-php/
 
 Updated By: Nate Nolting ([naten@paulbunyan.net](mailto:naten@paulbunyan.net))
 
-##LICENSE
+## LICENSE
 
 > "I love to hear when my work is being used, so if you decide to use this, feel encouraged
 > to send me an email. Smart Image Resizer is released under a Creative Commons
@@ -20,12 +20,12 @@ Updated By: Nate Nolting ([naten@paulbunyan.net](mailto:naten@paulbunyan.net))
 > free to contact me to discuss any specifics ([joe@shiftingpixel.com](mailto:joe@shiftingpixel.com))."
 -- Joe Lencioni
 
-##REQUIREMENTS
+## REQUIREMENTS
 
 * PHP
 * GD
 
-##INSTALL VIA BOWER
+## INSTALL VIA BOWER
 
 ```
     bower install image.php#1.4.4 -S
@@ -45,7 +45,7 @@ Parameters need to be passed in through the URL's query string:
 |  nocache | (optional) does not read image from the cache |
 |  quality | (optional, 0-100, default: 90) quality of output image |
 
-##EXAMPLES
+## EXAMPLES
 
 Resizing a JPEG:
 
