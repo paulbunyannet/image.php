@@ -1,3 +1,5 @@
+moved to gitlab: https://gitlab.pbndev.net/web-dev/image.php
+
 # Smart Image Resizer
 
 Resizes images, intelligently sharpens, crops based on width:height ratios, color fills
